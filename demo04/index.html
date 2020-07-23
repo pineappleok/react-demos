@@ -14,9 +14,13 @@
           return <h1>Hello {this.props.name}</h1>;
         }
       }
-
+      class Test extends React.Component{
+        render() {
+          return <h2>Test {typeof this.props.count}</h2>
+        }
+      }
       ReactDOM.render(
-        <HelloMessage name="John" />,
+        <div><HelloMessage name="John" /><Test count="1" /></div>,
         document.getElementById('example')
       );
     </script>

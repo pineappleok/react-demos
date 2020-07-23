@@ -14,9 +14,9 @@
         constructor(props) {
           super(props);
           this.myTextInput = React.createRef();
-          this.handleClick = this.handleClick.bind(this)
+          // this.handleClick = this.handleClick.bind(this)
         }
-        handleClick() {
+        handleClick = () => {
           this.myTextInput.current.focus();
         }
         render() {

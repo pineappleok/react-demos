@@ -15,9 +15,9 @@
           this.state = {
             liked: false
           }
-          this.handleClick = this.handleClick.bind(this)
+          // this.handleClick = this.handleClick.bind(this)
         }
-        handleClick(event) {
+        handleClick = (event) => {
           this.setState({ liked: !this.state.liked });
         }
         render() {

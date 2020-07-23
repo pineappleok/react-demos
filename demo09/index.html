@@ -15,9 +15,9 @@
           this.state = {
             value: 'Hello!'
           }
-          this.handleChange = this.handleChange.bind(this)
+          // this.handleChange = this.handleChange.bind(this)
         }
-        handleChange(event) {
+        handleChange = (event) => {
           this.setState({ value: event.target.value });
         }
         render() {

@@ -11,11 +11,14 @@
     <div id="example"></div>
     <script type="text/babel">
 
-      var data = 123;
+      var data = undefined;
 
       class MyTitle extends React.Component {
         static propTypes = {
           title: PropTypes.string.isRequired,
+        }
+        static defaultProps = {
+          title: 'Hello'
         }
         render() {
           return <h1> {this.props.title} </h1>;
